@@ -1,5 +1,7 @@
 /**
- * @file Generic Functions
+ * <h3>Generic Functions</h3>
+ * 타입을 인자로 받는 함수를 generic function이라 한다. 타입 인자는 diamond(<>) 내에 들어간다. 타입 추정이 가능한 경우 (type inference) 타입 인자를 넣을 필요가 없다.
+ * @module
  * @see https://www.typescriptlang.org/docs/handbook/2/functions.html#generic-functions
  */
 

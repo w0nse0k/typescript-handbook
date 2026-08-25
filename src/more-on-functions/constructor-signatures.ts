@@ -1,5 +1,7 @@
 /**
- * @file Constructor Signatures. new 를 사용해서 object 를 만들 때 사용하는 contructor 함수는 call signature 앞에 new를 붙인다. 이것을 constructor signature라고 한다.
+ * <h3>Constructor Signatures</h3>
+ * new 를 사용해서 object 를 만들 때 사용하는 contructor 함수는 call signature 앞에 new를 붙인다. 이것을 constructor signature라고 한다.
+ * @module
  * @see https://www.typescriptlang.org/docs/handbook/2/functions.html#construct-signatures
  */
 

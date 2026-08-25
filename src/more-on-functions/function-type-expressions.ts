@@ -1,5 +1,8 @@
 /**
- * Function Type Expressions
+ * <h3>Function Type Expressions</h3>
+ * 함수의 타입을 표현하는 법
+ * @module
+ * @see https://www.typescriptlang.org/docs/handbook/2/functions.html#function-type-expressions
  */
 
 function greeter(fn: (a: string) => void) {

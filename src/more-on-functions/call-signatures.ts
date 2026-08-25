@@ -1,5 +1,7 @@
 /**
- * @file Call Signatures. 자바스크립트 함수는 properties를 가질 수 있다. properties는 function type expression으로는 표현할 수 없고, object 의 callable properties 로 표현한다. 이것을 call signature라고 한다.
+ * <h3>Call Signatures</h3>
+ * 자바스크립트 함수는 properties를 가질 수 있다. properties는 function type expression으로는 표현할 수 없고, object 의 callable properties 로 표현한다. 이것을 call signature라고 한다.
+ * @module
  * @see https://www.typescriptlang.org/docs/handbook/2/functions.html#call-signatures
  */
 type DescribableFunction = {
