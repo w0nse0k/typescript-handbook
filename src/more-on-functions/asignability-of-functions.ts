@@ -1,0 +1,33 @@
+/**
+ * <h3>Assignability of Functions</h3>
+ * return type이 void인 함수(아무것도 리턴하지 않는 함수) 타입에 무엇인가를 리턴하는 함수를 할당할 수 있다.
+ */
+type voidFunc = () => void;
+
+const f1: voidFunc = () => {
+  return true;
+};
+
+const f2: voidFunc = () => true;
+
+const f3: voidFunc = function () {
+  return true;
+};
+
+const v1 = f1();
+const v2 = f2();
+const v3 = f3();
+
+console.log(v1, v2, v3);
+
+// void를 리턴하는 함수 타입을 인자로 받는 first-class function
+function f4(f: voidFunc) {
+  console.log(f());
+}
+
+// true를 리턴하는 함수
+function f5() {
+  return true;
+}
+
+f4(f5);
