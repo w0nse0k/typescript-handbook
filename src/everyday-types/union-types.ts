@@ -1,3 +1,8 @@
+/**
+ * <h3>Union Types</h3>
+ * @module
+ * @see https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#union-types
+ */
 function printId(id: number | string) {
   console.log("Your ID is: " + id);
 }

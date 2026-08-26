@@ -1,5 +1,6 @@
 /**
- * <h3>Optional Parameters</h3> *
+ * <h3>Optional Parameters</h3>
+ * @module
  * @see https://www.typescriptlang.org/docs/handbook/2/functions.html#optional-parameters
  */
 

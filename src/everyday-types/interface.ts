@@ -1,3 +1,8 @@
+/**
+ * <h3>Interfaces</h3>
+ * @module
+ * @see https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#interfaces
+ */
 interface Point {
   x: number;
   y: number;

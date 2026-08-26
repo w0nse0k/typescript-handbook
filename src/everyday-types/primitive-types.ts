@@ -1,6 +1,8 @@
-/*
- * Primitive Types: string, number, boolean,
+/**
+ * <h3>The primitives: string, number, and boolean</h3>
  * 배열은 [] 사용: string[], number[], boolean[]
+ * @module
+ * @see https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean
  */
 
 // 변수의 타입 표기는 필요 없다. 초기화하는 값으로 타입을 추론한다.

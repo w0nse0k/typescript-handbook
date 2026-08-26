@@ -1,6 +1,8 @@
 /**
  * <h3>Assignability of Functions</h3>
  * return type이 void인 함수(아무것도 리턴하지 않는 함수) 타입에 무엇인가를 리턴하는 함수를 할당할 수 있다.
+ * @module
+ * @see https://www.typescriptlang.org/docs/handbook/2/functions.html#assignability-of-functions
  */
 type voidFunc = () => void;
 
