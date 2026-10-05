@@ -8,3 +8,11 @@ function printCoord(pt: { x: number; y: number }) {
   console.log("The coordinate's y value is " + pt.y);
 }
 printCoord({ x: 3, y: 7 });
+
+// optional properties
+function printName(obj: { first: string; last?: string }) {
+  console.log(obj.first, obj.last);
+}
+// Both OK
+printName({ first: "Bob" });
+printName({ first: "Alice", last: "Alisson" });
