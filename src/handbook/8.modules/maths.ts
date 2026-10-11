@@ -1,5 +1,5 @@
 // export: 1개의 모듈에서 여러개를 export할 수 있다.
-export var pi = 3.14;
+export const pi = 3.14;
 export let squareTwo = 1.41;
 export const phi = 1.61;
 

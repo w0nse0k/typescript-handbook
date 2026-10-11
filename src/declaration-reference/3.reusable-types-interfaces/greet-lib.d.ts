@@ -6,4 +6,4 @@ interface GreetingSettings {
 
 function greet(setting: GreetingSettings): void;
 
-export { greet, type GreetingSettings };
+export { greet, GreetingSettings };
