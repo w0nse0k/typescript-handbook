@@ -1,9 +1,13 @@
 {
   "type": "module",
   "devDependencies": {
-    "@types/node": "^26.6.4",
-    "oxlint": "^1.86.0",
-    "oxlint-tsgolint": "^7.0.2003",
+    "@types/node": "^26.6.5",
+    "oxlint": "^1.87.0",
+    "oxlint-tsgolint": "^7.0.2004",
+    "tsx": "^4.23.15",
     "typescript": "^7.0.2"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
   }
 }
