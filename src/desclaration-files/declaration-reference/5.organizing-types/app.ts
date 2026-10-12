@@ -3,9 +3,8 @@
  * @module
  * @see https://www.typescriptlang.org/docs/handbook/declaration-files/by-example.html#organizing-types
  */
-import { Greeter, type GreetingLib } from "./greeter.js";
+import { Greeter } from "./greeter-lib.js";
 const g = new Greeter("Hello");
 
-const logOptions: GreetingLib.LogOptions = { verbose: true };
-g.log(logOptions);
+g.log({ verbose: true });
 g.alert({ modal: false, title: "Current Greeting" });

@@ -20,6 +20,13 @@
       "program": "${file}",
       "runtimeArgs": ["--import=tsx"],
       "outFiles": ["${workspaceFolder}/**/*.js"]
+    },
+    {
+      "name": "declaration",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["tsc", "-p", "tsconfig-declaration.json"]
     }
   ]
 }

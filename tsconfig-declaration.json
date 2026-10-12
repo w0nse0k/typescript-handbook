@@ -1,12 +1,10 @@
 {
   "compilerOptions": {
-    "rootDir": "./src",
-    "outDir": "./src/types",
     "allowJs": true,
     "checkJs": true,
     "declaration": true,
     "emitDeclarationOnly": true,
     "strict": true
   },
-  "include": ["src/**/*.js"]
+  "include": ["src/**/*.js", "src/**/*.d.ts"]
 }

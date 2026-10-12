@@ -3,7 +3,8 @@
  * @module
  * @see https://www.typescriptlang.org/docs/handbook/declaration-files/by-example.html#classes
  */
-import { Greeter } from "./greeter.js";
+import { Greeter } from "./greeter-lib.js";
+
 const myGreeter = new Greeter("hello, world");
 myGreeter.greeting = "howdy";
 myGreeter.showGreeting();

@@ -1,7 +1,25 @@
 /**
- * @description getWidget 함수는 문자열을 입력받아 Widget을 반환하거나, 숫자를 입력받아 Widget 배열을 반환합니다.
- * @module
- * @name widget-lib
+ * 위젯 타입
+ * @typedef {{ name: string }} Widget
+ */
+
+/**
+ * 문자열로 위젯 생성
+ * @overload
+ * @param {string} value
+ * @returns { Widget }
+ */
+
+/**
+ * 숫자로 위젯 배열 생성
+ * @overload
+ * @param {number} value
+ * @returns {Widget[]}
+ */
+
+/**
+ * 문자열이나 숫자로 위젯이나 위젯 배열 생성
+ * @param { string | number } value
  */
 export function getWidget(value) {
   if (typeof value === "string") return { name: value };
