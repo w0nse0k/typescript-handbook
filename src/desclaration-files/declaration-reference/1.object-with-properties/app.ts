@@ -3,7 +3,7 @@
  * @module
  * @see https://www.typescriptlang.org/docs/handbook/declaration-files/by-example.html#objects-with-properties
  */
-import "./my-lib.js";
+import { myLib } from "./my-lib.js";
 
 let result = myLib.makeGreeting("hello, world");
 console.log("The computed greeting is:", result);

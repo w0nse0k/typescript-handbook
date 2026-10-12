@@ -1,7 +1,4 @@
-/**
- * @namespace myLib
- */
-globalThis.myLib = {
+export const myLib = {
   numberOfGreetings: 0,
 
   /**
