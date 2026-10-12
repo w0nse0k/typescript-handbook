@@ -1,5 +1,6 @@
 /**
  * <h3>Overview</h3>
+ * JavaScript에서 데이터를 그룹화하고 전달하는 기본적인 방법은 객체를 사용하는 것입니다. TypeScript에서는 이를 객체 타입으로 표현합니다.
  * @module
  * @see https://www.typescriptlang.org/docs/handbook/2/objects.html
  */

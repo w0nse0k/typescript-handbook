@@ -34,7 +34,7 @@ class Base {
 class Derived extends Base {
   constructor() {
     super(); // constructor 상단에 항상 상위 클래스의 constructor 호출
-    console.log(this.k);
+    console.log("Derived instance created. k=", this.k);
   }
 }
 new Derived();

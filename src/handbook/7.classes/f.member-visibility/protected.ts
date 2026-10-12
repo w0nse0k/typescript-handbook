@@ -1,10 +1,10 @@
 /**
  * <h3>protected</h3>
+ * protected 멤버는 해당 멤버가 선언된 클래스의 하위 클래스에서만 접근할 수 있습니다.
  * @module
  * @see https://www.typescriptlang.org/docs/handbook/2/classes.html#protected
  */
 class Greeter {
-  // visibility를 생략하면 기본이 public이다.
   public greet() {
     console.log("Hello, " + this.getName());
   }
@@ -26,7 +26,6 @@ g.greet();
 const sg = new SpecialGreeter();
 sg.greet();
 sg.howdy();
-// g.getName(); // error
 
 class Base {
   protected m = 10;

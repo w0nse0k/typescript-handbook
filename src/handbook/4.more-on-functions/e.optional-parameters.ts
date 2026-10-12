@@ -1,14 +1,9 @@
 /**
  * <h3>Optional Parameters</h3>
+ * optional parameter(?) 이나 default value를 사용해서 인자를 갯수를 다르게 받을 수 있다.
  * @module
  * @see https://www.typescriptlang.org/docs/handbook/2/functions.html#optional-parameters
  */
-function f(n: number) {
-  console.log(n.toFixed()); // arguments가 없음
-  console.log(n.toFixed(3)); // arguments가 1개
-}
-f(10);
-
 // ?를 사용해서 optional parameter 정의
 function square(x?: number) {
   if (x === undefined) x = 0;

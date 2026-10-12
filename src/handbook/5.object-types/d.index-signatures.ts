@@ -19,7 +19,7 @@ const myNumberDictionary: NumberDictionary = {
   key2: 100,
 };
 
-console.log(myNumberDictionary); // Output: { length: 10, key1: 42, key2: 100 }
+console.log(myNumberDictionary); // { length: 10, key1: 42, key2: 100 }
 
 // string index signature with multiple types: 문자열 인덱스를 사용하여 객체의 속성을 정의할 때, 속성의 값이 여러 타입일 수 있다.
 interface NumberOrStringDictionary {
@@ -35,4 +35,4 @@ const myNumberOrStringDictionary: NumberOrStringDictionary = {
   key2: "Hello",
 };
 
-console.log(myNumberOrStringDictionary); // Output: { length: 10, name: 'My Dictionary', key1: 42, key2: 'Hello' }
+console.log(myNumberOrStringDictionary); // { length: 10, name: 'My Dictionary', key1: 42, key2: 'Hello' }

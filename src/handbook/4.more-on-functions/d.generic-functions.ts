@@ -9,16 +9,13 @@ function firstElement<Type>(arr: Type[]): Type | undefined {
   return arr[0];
 }
 
-// s is of type 'string'
 const s = firstElement(["a", "b", "c"]);
-// n is of type 'number'
 const n = firstElement([1, 2, 3]);
-// u is of type undefined
 const u = firstElement([]);
 
-console.log("firstElement:", s);
-console.log("firstElement:", n);
-console.log("firstElement:", u);
+console.log("firstElement:", s); // a
+console.log("firstElement:", n); // 1
+console.log("firstElement:", u); // undefined
 
 // type constraints. 타입 제약조건.
 // length: number  property가 있는 타입만 가능

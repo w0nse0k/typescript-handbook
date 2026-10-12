@@ -6,7 +6,7 @@
  */
 type StringNumberPair = [string, number];
 const pair: StringNumberPair = ["hello", 42]; // OK
-console.log(pair); // Output: ['hello', 42]
+console.log(pair); // ['hello', 42]
 
 const [first, second] = pair; // destructuring
-console.log(first, second); // Output: 'hello' 42
+console.log(first, second); // 'hello' 42

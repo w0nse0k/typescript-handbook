@@ -10,5 +10,5 @@ class MySafe {
 }
 
 const s = new MySafe();
-console.log(s["secretKey"]);
+console.log(s["secretKey"]); // 인덱스를 통한 접근 가능
 // console.log(s["#anotherKey"]); // undefined

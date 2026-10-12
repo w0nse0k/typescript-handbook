@@ -32,4 +32,4 @@ const cc: ColorfulCircle = {
   radius: 42,
 };
 
-console.log(cc); // Output: { color: 'red', radius: 42 }
+console.log(cc); // { color: 'red', radius: 42 }

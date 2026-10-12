@@ -18,6 +18,6 @@ class Derived extends Base {
   }
 }
 
-// const b = new Base();
+// const b = new Base(); // error
 const d = new Derived();
 d.printName();

@@ -18,7 +18,12 @@ interface PaintOptions {
 }
 
 function paintShape(opts: PaintOptions) {
-  console.log("Painting shape at position: ", shape.name, opts.xPos, opts.yPos);
+  console.log(
+    "Painting shape at position: ",
+    opts.shape.name,
+    opts.xPos,
+    opts.yPos,
+  );
 }
 
 const shape = getShape();

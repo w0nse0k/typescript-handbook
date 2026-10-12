@@ -14,8 +14,8 @@ class C {
 }
 
 const c1 = new C();
-c1.length = -1;
-console.log(c1.length);
+c1.length = -1; // setter 호출
+console.log(c1.length); // getter 호출
 
 c1.length = 1;
 console.log(c1.length);
