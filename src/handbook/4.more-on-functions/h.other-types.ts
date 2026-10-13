@@ -10,7 +10,6 @@ noop();
 // any와 unknown은 모두 최상위 타입이다.
 // any는 type check를 안하므로 기본적으로 쓰지 않는다.
 // 타입을 모를때 unknown을 사용한다. unknown은 type narrowing을 해야 properties에 접근 가능하다.
-
 function f1(a: any) {
   console.log(a.toUpperCase());
 }
