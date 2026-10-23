@@ -5,28 +5,13 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "node",
       "type": "node",
       "request": "launch",
+      "name": "Launch Program",
       "skipFiles": ["<node_internals>/**"],
       "program": "${file}",
-      "outFiles": ["${workspaceFolder}/**/*.js"]
-    },
-    {
-      "name": "node --import=tsx",
-      "type": "node",
-      "request": "launch",
-      "skipFiles": ["<node_internals>/**"],
-      "program": "${file}",
-      "runtimeArgs": ["--import=tsx"],
-      "outFiles": ["${workspaceFolder}/**/*.js"]
-    },
-    {
-      "name": "declaration",
-      "type": "node",
-      "request": "launch",
-      "runtimeExecutable": "npx",
-      "runtimeArgs": ["tsc", "-p", "tsconfig-declaration.json"]
+      "outFiles": ["${workspaceFolder}/**/*.js"],
+      "runtimeArgs": ["--import=tsx", "--env-file=.env"]
     }
   ]
 }
