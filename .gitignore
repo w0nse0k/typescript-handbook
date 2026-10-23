@@ -3,4 +3,4 @@ package-lock.json
 docs/
 src/tests/
 dist/
-src/types/
+.env
