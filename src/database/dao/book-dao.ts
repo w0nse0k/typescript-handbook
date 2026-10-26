@@ -7,7 +7,7 @@
  * @see https://www.npmjs.com/package/mariadb
  */
 import mariadb, { type UpsertResult } from "mariadb";
-import { config, type Book } from "../lib.js";
+import { connectionConfig, type Book } from "../lib.js";
 
 /**
  * 상품 목록
@@ -15,7 +15,7 @@ import { config, type Book } from "../lib.js";
 export async function listBooks(size: number, page: number) {
   let conn;
   try {
-    conn = await mariadb.createConnection(config);
+    conn = await mariadb.createConnection(connectionConfig);
     return await conn.execute<Book[]>(
       "select id, title, price, created_at from book limit ?,?",
       [(page - 1) * size, size],
@@ -31,7 +31,7 @@ export async function listBooks(size: number, page: number) {
 export async function getBook(id: number) {
   let conn;
   try {
-    conn = await mariadb.createConnection(config);
+    conn = await mariadb.createConnection(connectionConfig);
     const books = await conn.execute<Book[]>(
       "select id, title, price, created_at from book where id=?",
       [id],
@@ -48,7 +48,7 @@ export async function getBook(id: number) {
 export async function addBook(book: Book) {
   let conn;
   try {
-    conn = await mariadb.createConnection(config);
+    conn = await mariadb.createConnection(connectionConfig);
     return await conn.execute<UpsertResult>(
       "insert book(title, price) values(?,?)",
       [book.title, book.price],
@@ -64,7 +64,7 @@ export async function addBook(book: Book) {
 export async function updateBook(book: Book) {
   let conn;
   try {
-    conn = await mariadb.createConnection(config);
+    conn = await mariadb.createConnection(connectionConfig);
     return await conn.execute<UpsertResult>(
       "update book set title=?, price=? where id=?",
       [book.title, book.price, book.id],
@@ -80,7 +80,7 @@ export async function updateBook(book: Book) {
 export async function deleteBook(id: number) {
   let conn;
   try {
-    conn = await mariadb.createConnection(config);
+    conn = await mariadb.createConnection(connectionConfig);
     return await conn.execute<UpsertResult>("delete from book where id=?", [
       id,
     ]);

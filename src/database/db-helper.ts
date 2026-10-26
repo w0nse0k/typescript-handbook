@@ -3,13 +3,13 @@
  * @author Jacob
  */
 import mariadb, { type UpsertResult } from "mariadb";
-import { config } from "./lib.js";
+import { connectionConfig } from "./lib.js";
 
 export const db = {
   list: async <T>(sql: string, ...args: unknown[]) => {
     let conn;
     try {
-      conn = await mariadb.createConnection(config);
+      conn = await mariadb.createConnection(connectionConfig);
       return await conn.execute<T[]>(sql, args);
     } finally {
       if (conn) conn.end();
@@ -19,7 +19,7 @@ export const db = {
   one: async <T>(sql: string, ...args: unknown[]) => {
     let conn;
     try {
-      conn = await mariadb.createConnection(config);
+      conn = await mariadb.createConnection(connectionConfig);
       return (await conn.execute<T[]>(sql, args))[0];
     } finally {
       if (conn) conn.end();
@@ -29,7 +29,7 @@ export const db = {
   upsert: async (sql: string, ...args: unknown[]) => {
     let conn;
     try {
-      conn = await mariadb.createConnection(config);
+      conn = await mariadb.createConnection(connectionConfig);
       return await conn.execute<UpsertResult>(sql, args);
     } finally {
       if (conn) conn.end();
