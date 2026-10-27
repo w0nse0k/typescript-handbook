@@ -15,8 +15,8 @@ export interface Book {
   created_at?: Date;
 }
 
-export function bookString(this: Book | undefined) {
-  return this === undefined
-    ? "Book undefined"
-    : `Book {id: ${this.id}, title: ${this.title}, price: ${this.price}, created_at: ${this.created_at?.toLocaleString("sv-SE")}}`;
+export function bookString(book?: Book) {
+  return book
+    ? `Book {id: ${book.id}, title: ${book.title}, price: ${book.price}, created_at: ${book.created_at?.toLocaleString("sv-SE")}}`
+    : undefined;
 }

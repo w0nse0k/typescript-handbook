@@ -2,7 +2,7 @@
  * 책 수정
  */
 import { type Book } from "../lib.js";
-import { updateBook } from "../dao/book-dao.js";
+import { updateBook } from "../dao/book-dao-with-helper.js";
 
 const book: Book = {
   id: 104,
