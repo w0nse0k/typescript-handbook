@@ -15,8 +15,15 @@ export interface Book {
   created_at?: Date;
 }
 
+function prettyDate(date?: Date) {
+  return date?.toLocaleString("sv-SE");
+}
+
 export function bookString(book?: Book) {
   return book
-    ? `Book {id: ${book.id}, title: ${book.title}, price: ${book.price}, created_at: ${book.created_at?.toLocaleString("sv-SE")}}`
+    ? JSON.stringify({
+        ...book,
+        created_at: prettyDate(book?.created_at),
+      })
     : undefined;
 }
